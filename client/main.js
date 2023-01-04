@@ -56,13 +56,14 @@ const handleFormSubmit = async(e) =>  {
     e.preventDefault();
     const data = new FormData(form);
     //user chat Stripe
-    chatContainer.innerHTML += chatStripe(false, data.get('prompt'));
+    const qUniqueId = generateUniqueId();
+    chatContainer.innerHTML += chatStripe(false, data.get('prompt'), qUniqueId);
 
     form.reset();
 
     //bot chat stripe
     const uniqueId = generateUniqueId();
-    chatContainer.innerHTML += chatStripe(true, "", uniqueId);
+    chatContainer.innerHTML += chatStripe(true, " ", uniqueId);
 
     chatContainer.scrollTop = chatContainer.scrollHeight;
     const msgDiv = document.getElementById(uniqueId);
