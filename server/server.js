@@ -25,7 +25,13 @@ app.post('/', async(req, res) => {
     try {
         const prompt = req.body.prompt;
         const response = await openai.createCompletion({
-
+            model:"text-davinci-003",
+            prompt:`${prompt}`,
+            temperature:0, //higher values, more risks
+            max_tokens:3000, //maximum number of tokens to generate in the completion.
+            top_p:1, //alternative to sampling with temperature
+            frequency_penalty:0.5, //frequency to repeat the same line verbatim
+            presence_penalty:0,
         });
         res.status(200).send({
             bot:response.data.choices[0].text
