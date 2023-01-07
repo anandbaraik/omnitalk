@@ -1,5 +1,6 @@
 import bot from "./assets/bot.svg";
 import user from "./assets/user.svg";
+import { SERVER_API } from "./utils/constant";
 let chatContainer = document.querySelector("#chat_container");
 let form = document.querySelector('form');
 
@@ -20,6 +21,7 @@ function typeText(element, text) {
     let interval = setInterval(() => {
         if(index < text.length) {
             element.innerHTML += text.charAt(index);
+            ++index;
         } else {
             clearInterval(interval);
         }
@@ -54,10 +56,16 @@ function chatStripe(isAi, msg, uniqueId) {
 
 const handleFormSubmit = async(e) =>  {
     e.preventDefault();
+
     const data = new FormData(form);
+
+    if (data.get('prompt').trim().length < 3) return;
+
     //user chat Stripe
     const qUniqueId = generateUniqueId();
-    chatContainer.innerHTML += chatStripe(false, data.get('prompt'), qUniqueId);
+    chatContainer.innerHTML += chatStripe(false, " ", qUniqueId);
+    const questDiv = document.getElementById(qUniqueId);
+    questDiv.innerHTML = data.get('prompt');
 
     form.reset();
 
@@ -69,7 +77,7 @@ const handleFormSubmit = async(e) =>  {
     const msgDiv = document.getElementById(uniqueId);
     loader(msgDiv);
 
-    const response = await fetch('http://localhost:5000', {
+    const response = await fetch(SERVER_API, {
         method: "POST",
         headers:{
             'Content-Type': 'application/json'
@@ -89,7 +97,7 @@ const handleFormSubmit = async(e) =>  {
     } else {
         const errorMsg = await response.text();
         console.error(errorMsg);
-        msgDiv.innerHTML = "Something went wrong!";
+        typeText(msgDiv, "Something went wrong! 🙁");
     }
 }
 
