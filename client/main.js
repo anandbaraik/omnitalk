@@ -1,6 +1,7 @@
 import bot from "./assets/bot.svg";
 import user from "./assets/user.svg";
 import { SERVER_API } from "./utils/constant";
+
 let chatContainer = document.querySelector("#chat_container");
 let form = document.querySelector('form');
 
