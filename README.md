@@ -1,6 +1,6 @@
 # talkible
 
-You have problems then I have solution for you! 👇
+You have problems then I have solution for you!
 talkible, It's an AI assistant where you can talk with an AI. You can ask any questions be it coding, explaining code snippets, solving maths, solving life problems, writting essay etc among others. It doesn't store any data & it's free as well so raho befikar aur talk your heart out with 'talkible'.
 
 # live
@@ -60,4 +60,4 @@ Run
 
 ![Talkible-Your-AI-Assistant](https://user-images.githubusercontent.com/31516195/211374708-6ebafca6-9d64-4f19-afac-d033c9b6d60f.png)
 
-[![Talkible-Your-AI-Assistant](https://user-images.githubusercontent.com/31516195/211374708-6ebafca6-9d64-4f19-afac-d033c9b6d60f.png)](./media/Talkible%20_%20You_%20AI_Assistant.mp4)
+[![Talkible-Your-AI-Assistant](https://user-images.githubusercontent.com/31516195/211374708-6ebafca6-9d64-4f19-afac-d033c9b6d60f.png)](./media/Talkible%20_%20You_%20AI_Assistant.mp4 "Talkible-Your-AI-Assistant")
