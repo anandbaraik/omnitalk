@@ -60,4 +60,4 @@ Run
 
 ![Talkible-Your-AI-Assistant](https://user-images.githubusercontent.com/31516195/211374708-6ebafca6-9d64-4f19-afac-d033c9b6d60f.png)
 
-[![Talkible-Your-AI-Assistant](https://user-images.githubusercontent.com/31516195/211374708-6ebafca6-9d64-4f19-afac-d033c9b6d60f.png)](./media/Talkible%20_%20You_%20AI_Assistant.mp4 "Talkible-Your-AI-Assistant")
+[![Talkible-Your-AI-Assistant](https://user-images.githubusercontent.com/31516195/211374708-6ebafca6-9d64-4f19-afac-d033c9b6d60f.png)](https://user-images.githubusercontent.com/31516195/211611475-c283ec99-3284-4b40-a9de-f0cb5f911db0.mp4)
