@@ -98,7 +98,7 @@ const handleFormSubmit = async(e) =>  {
     } else {
         const errorMsg = await response.text();
         console.error(errorMsg);
-        typeText(msgDiv, "Something went wrong! 🙁 \nkindly contact `anand` by clicking link given in the topmost right corner!");
+        typeText(msgDiv, errorMsg);
     }
 }
 
