@@ -1,7 +1,7 @@
 {
-  "name": "talkible-server",
+  "name": "omnitalk-server",
   "version": "1.0.0",
-  "description": "talkible",
+  "description": "omnitalk",
   "type": "module",
   "scripts": {
     "server": "nodemon server"

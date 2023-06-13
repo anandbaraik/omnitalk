@@ -1,1 +1,1 @@
-export const SERVER_API = 'https://talkible.onrender.com';
+export const SERVER_API = 'https://omnitalk.onrender.com';
